@@ -50,7 +50,7 @@ public class ChangePassword extends HttpServlet {
 					{	
 						if((newpassword.equals(renewpassword))==false)
 						{
-							sess.setAttribute("msg","Your retype password is not matching.try again");
+							sess.setAttribute("msg","Your retype password is not matching. Try again");
 							response.sendRedirect("ChangePassword.jsp");
 						}else
 						{

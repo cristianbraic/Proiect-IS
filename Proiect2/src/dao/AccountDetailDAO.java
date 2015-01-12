@@ -57,7 +57,7 @@ public class AccountDetailDAO {
 		rs=pst.executeQuery();
 		while(rs.next())
 		{
-			actdtls.add(new AccountDetail(rs.getString(1),rs.getInt(2),rs.getDouble(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8)));
+				actdtls.add(new AccountDetail(rs.getString(1),rs.getInt(2),rs.getDouble(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8)));
 		}
 		return actdtls;
 	}

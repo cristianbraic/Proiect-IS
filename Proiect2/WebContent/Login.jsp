@@ -5,8 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Online Banking</title>
+<style>
+  body {background-color:lightgrey}
+  h1   {color:blue}
+  p    {color:green}
+</style>
+
 </head>
 <body>
+ 
 
 <% session.setAttribute("login", "yes");
 if(session.getAttribute("showmsg")!=null){
@@ -16,6 +23,7 @@ if(session.getAttribute("showmsg")!=null){
 	else if(session.getAttribute("showmsg")==null){
 		session.setAttribute("msg", "null");
 	}%>
+	
 <center><h2><font face="Times New Roman" color="blue">Welcome to Online Banking</font></h2><br><br>
 <p align="left">To log on, enter your Username and Password </p>
 <hr width="900" size="5">

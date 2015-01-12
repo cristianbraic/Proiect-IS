@@ -6,6 +6,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Online Banking</title>
+<style>
+  body {background-color:lightgrey}
+  h1   {color:blue}
+  p    {color:green}
+</style>
 </head>
 <body>
 <% if(session.getAttribute("valid")==null){
@@ -17,7 +22,7 @@
 		}
 		if((session.getAttribute("role")).equals("CUSTOMER")){
 		String user=(String)session.getAttribute("user");%>
-		<center><h2><font face="verdana"  color="ff66cc">Welcome <%=user %></font></h2></center><hr width="1000" size="5"><br>
+		<center><h2><font face="verdana"  color="6698ff">Welcome <%=user %></font></h2></center><hr width="1000" size="5"><br>
 		<%} else { %>
 <center><h2><font face="verdana"  color="6698ff">Welcome Manager</font></h2></center><hr width="1000" size="5"><br><%} %>
 <center><h3><font face="verdana">Enter the required information</font></h3></center>
@@ -47,7 +52,7 @@
 		<td width="250" align="left"><input type="password" name="renewpassword"></td>
 	</tr>
 	<tr>
-		<td width="500" align="center"><input type="submit" name="submit" value="change"></td>
+		<td width="500" align="center"><input type="submit" name="submit" value="Change"></td>
 	</tr>
 </table>
 </center>

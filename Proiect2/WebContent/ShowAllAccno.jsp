@@ -8,6 +8,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Online Banking</title>
+<style>
+  body {background-color:lightgrey}
+  h1   {color:blue}
+  p    {color:green}
+</style>
 </head>
 <body>
 <%if(session.getAttribute("valid")==null){

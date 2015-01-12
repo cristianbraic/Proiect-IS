@@ -9,6 +9,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Online Banking</title>
+<style>
+  body {background-color:lightgrey}
+  h1   {color:blue}
+  p    {color:green}
+</style>
 </head>
 <body>
 <%if(session.getAttribute("valid")==null){
@@ -20,6 +25,9 @@ String user=(String)session.getAttribute("user");
 <table width="1000">
 	<tr>
 		<td width="900"><a href="Customer.jsp">Home</a></td>
+		<td width="800"><a href="ViewTranDetails.jsp">View details</a></td>
+		<td width="700"><a href="BalanceTransfer.jsp">Balance Transfer</a></td>
+		<td width="600"><a href="ChangeStatus.jsp">Change Status</a></td>
 		<td width="100"><a href="Logout">Logout</a></td>
 	</tr>
 </table>

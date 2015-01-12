@@ -11,6 +11,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Online Banking</title>
+
+<style>
+  body {background-color:lightgrey}
+  h1   {color:blue}
+  p    {color:green}
+</style>
 </head>
 <body>
 <%if(session.getAttribute("valid")==null){
@@ -21,6 +27,7 @@
 		out.println("<font color=red>"+session.getAttribute("msg")+"</font>");
 		session.setAttribute("msg","null");
 	}%>
+
 <center><h2><font face="verdana" color="6698ff">Welcome Manager</font></h2></center><hr width="1000" size="5"><br>
 <center><h3><font face="verdana">Enter the required information</font></h3></center>
 <table width="1000">
@@ -33,15 +40,17 @@
 <center><table width="500">
 	<tr>
 		<td width="300" align="left">
-<% LoginDAO daolg=new LoginDAO();
+<% 
+LoginDAO daolg=new LoginDAO();
 			daolg.getConnection();
-			List<Login> user=daolg.getAllUsername();
+			List<Login>  =daolg.getAllUsername();
 			out.println("Select the username</td>");
 			out.println("<td width=200 align=left><select name=user>");
 			for(Login u:user)
 			{
 				out.println("<option value="+u.getUsername()+">"+u.getUsername()+"</option>");
-			}%>
+			}
+			%>
 		</td>
 	</tr>
 	<tr>
@@ -54,7 +63,7 @@
 	</tr>
 	<tr>
 		<td width="300" align="left">Select the gender</td>
-		<td  width="200" align="left"><input type="radio" name="gender" value="female">female
+		<td  width="200" align="left"><input type="radio" name="gender" value="female">Female
 			<input type="radio" name="gender" value="male">Male</td>
 	</tr>
 	<tr>

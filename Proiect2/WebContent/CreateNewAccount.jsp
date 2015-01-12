@@ -6,6 +6,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Online Banking</title>
+<style>
+  body {background-color:lightgrey}
+  h1   {color:blue}
+  p    {color:green}
+</style>
 </head>
 <body>
 <%if(session.getAttribute("valid")==null){ 
@@ -44,7 +49,7 @@
 	</tr>
 	<tr>
 		<td width="300"  align="left">Select the gender</td>
-		<td width="200"><input type="radio" name="gender" value="female">female
+		<td width="200"><input type="radio" name="gender" value="female">Female
 			<input type="radio" name="gender" value="male">Male</td>
 	</tr>
 	<tr>
@@ -52,7 +57,7 @@
 		<td width="200"><input type="text" name="address"></td>
 	</tr>
 	<tr>
-		<td width="300" align="left">Enter the Emailid</td>
+		<td width="300" align="left">Enter the Email</td>
 		<td width="200"><input type="text" name="emailid"></td>
 	</tr>
 	<tr>

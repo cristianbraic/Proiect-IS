@@ -8,6 +8,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Online Banking</title>
+
+<style>
+  body {background-color:lightgrey}
+  h1   {color:blue}
+  p    {color:green}
+</style>
 </head>
 <body>
 <%if(session.getAttribute("valid")==null){
@@ -19,8 +25,8 @@
 <table width="1000">
 	<tr>
 		<td width="900"><a href="Manager.jsp">Home</a></td>
+	
 		<td width="100"><a href="Logout">Logout</a></td>
-	</tr>
 </table>
 <br>
 <center><table border="2">

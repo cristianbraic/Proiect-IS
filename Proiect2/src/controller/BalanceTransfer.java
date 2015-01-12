@@ -71,7 +71,7 @@ public class BalanceTransfer extends HttpServlet {
 						{	
 							if((transamount<=5000)==false)
 							{
-								sess.setAttribute("msg", "The transfering amount need to be less or eqal to 5000");
+								sess.setAttribute("msg", "The transfering amount need to be less or equal to 5000");
 								response.sendRedirect("BalanceTransfer.jsp");
 							}else 
 							{
